@@ -1,0 +1,65 @@
+body{
+    background-color: bisque;
+    height: 100vh;
+}
+#Signup{
+    display: flex;
+    position: relative;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width:max-content;
+    gap: 10px; 
+    padding: 3%;
+    box-shadow: 10px 10px 40px;
+}
+#Signup>h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    margin: 0;
+    padding: 45px;
+}
+.nameinput{
+    display: flex;
+    gap: 10px;
+}
+.nameinput input{
+    padding: 10px;
+    border:  2px solid ;
+    border-radius:10px;
+}
+.emailinput input{
+    padding: 10px;
+    border:  2px solid ;
+    border-radius:10px;
+    width: 360px;
+}
+.passwordinput{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.passwordinput input{
+    padding: 10px;
+    border:  2px solid ;
+    border-radius:10px;
+    width: 360px;
+}
+
+.Sumbit{
+    padding: 10px;
+    border: 2px solid;
+    transition: 500ms;
+    font-size: 1.2rem;
+}
+
+.Sumbit:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color: black;
+}
