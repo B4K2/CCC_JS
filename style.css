@@ -1,17 +1,21 @@
 body{
-    background-color: bisque;
+    background-image: url(https://www.wallpaperflare.com/static/426/539/660/nature-landscape-mountains-winter-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
+    overflow: hidden;
 }
 #Signup{
     display: flex;
     position: relative;
-    top: 20vh;
+    top: 15vh;
     left: 50%;
     transform: translateX(-50%);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255,0.5);
+    backdrop-filter: blur(3px);
     width:max-content;
     gap: 10px; 
     padding: 3%;
