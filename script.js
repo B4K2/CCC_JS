@@ -24,9 +24,9 @@ document.querySelector("#password").addEventListener("input",function(event){
         document.querySelector(".weak").style.backgroundColor = "yellow";
         document.querySelector(".med").style.backgroundColor = "yellow";
     }if(/[a-z]/.test(password) && /[A-Z]/.test(password) && /[0-9]/.test(password) && /[!@#\$%\^\&*\)\(+=._-]/.test(password)){
-        document.querySelector(".weak").style.backgroundColor = "green";
-        document.querySelector(".med").style.backgroundColor = "green";
-        document.querySelector(".strong").style.backgroundColor = "green";
+        document.querySelector(".weak").style.backgroundColor = "greenyellow";
+        document.querySelector(".med").style.backgroundColor = "greenyellow";
+        document.querySelector(".strong").style.backgroundColor = "greenyellow";
     }
 });
 
