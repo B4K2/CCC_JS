@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .navigation{
     display: flex;
     position: fixed;
@@ -90,4 +94,73 @@
     font-size: 4rem;
     font-weight: 800;
     right: 80%;
+}
+
+#bikes{
+    position: relative;
+    top: 150px;
+    text-align: center;
+}
+
+#bikes h1{
+    padding: 10px;
+    background-color: red;
+    color: white;
+    width: max-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    letter-spacing: 2px;
+    
+}
+
+.bike_img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.bike_img img {
+    max-width: 100%;         
+    height: auto;             
+}
+#Rating{
+    position: relative;
+    top: 200px;
+}
+
+#Rating h1{
+    text-align: center;
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
+.rating-box{
+    position: relative;
+    font-size: 2rem;
+}
+
+.stars i{
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.stars i.active{
+    color: orange;
+}
+
+.stars i:hover{
+    color:orange;
+}
+
+.rating-box{
+    text-align: center;
+}
+
+#feedback{
+    border: 2px solid black;
+    padding: 10px 100px;
+    resize: none;
 }

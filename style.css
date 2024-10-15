@@ -1,7 +1,5 @@
 body{
-    background-image: url(https://www.wallpaperflare.com/static/426/539/660/nature-landscape-mountains-winter-wallpaper.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(45deg, red , black, white);
     height: 100vh;
     overflow: hidden;
 }

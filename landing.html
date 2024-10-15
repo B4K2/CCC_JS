@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Landing</title>
 </head>
 <body>
@@ -11,13 +12,38 @@
         <img src="https://assets.ducati.com/dist/0.27.4/assets/img/ducati_id.png" alt="">
         <a href="#">Home</a>
         <a href="#bikes">Bikes</a>
-        <a href="#rating">Rating</a>
+        <a href="#Rating">Rating</a>
     </div>    
     <div class="bikephoto">
         <img  class="bikeimage" src="https://images.ctfassets.net/x7j9qwvpvr5s/43adRuY33iuCayAyMy3wTw/5545b174f876fc95ffcfff3d643c4d23/Ducati-MY25-Panigale-V4-overview-carousel-hero-link-1600x650-01.jpg" alt="">
         <div class="info">Panigale V4</div>
         <div class="prev"><input type="button" class="prev_btn"></div>
         <div class="next"><input type="button" class="next_btn"></div>
+    </div>
+    <div id="bikes">
+        <h1>Ducati Range</h1>
+        <div class="bike_img">
+            <img class="bike_img1" src="https://images.ctfassets.net/rjyti9b6lmvy/571I8ug1tnCFWUGM2TjNB6/7601b020d4c56a87d92d834bce8d0524/2panigale-v2.png" alt="">
+            <img class="bike_img2" src="https://images.ctfassets.net/rjyti9b6lmvy/4o2FxMljQeaowZMzl09Lic/46c07433e592462953b054f07933248f/2SF-v4s-red.png" alt="">
+            <img class="bike_img3" src="https://images.ctfassets.net/rjyti9b6lmvy/4LcAYjli8LOPaoWAY7DIjT/2883f13456e5ea0191296d9ceb8ba09a/2SF-v2.png" alt="">
+            <img class="bike_img4" src="https://images.ctfassets.net/x7j9qwvpvr5s/Og3RwLG7uLAN6lDHo5OxQ/6d14798e070edbdb21deac1dbccecb6c/MY23-Multistrada-V4-Rally-Radar-Gr-Model-Blocks-630x390.png" alt="">
+        </div>
+    </div>
+    <div id="Rating">
+        <h1>Rating and Reviews</h1>
+        <div class="rating-box">
+            <header>How was your experience?</header>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <textarea name="feedback" id="feedback" placeholder="Enter your feedback"></textarea>
+        </div>
+
+
     </div>
 <script src="script2.js"></script>
 </body>
