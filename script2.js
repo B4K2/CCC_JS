@@ -13,20 +13,33 @@ function updateImage() {
     curtext.textContent = image[currentindex].text;
 }
 
+function startAutoSlide() {
+    autoSlide = setInterval(() => {
+        currentindex = (currentindex + 1) % image.length; 
+        updateImage(); 
+    }, 3000);
+}
+
+function stopAutoSlide() {
+    clearInterval(autoSlide);
+}
+
 document.querySelector(".prev_btn").addEventListener("click",function(event){
+    stopAutoSlide();
     currentindex = currentindex - 1 % image.length;
     updateImage();
+    startAutoSlide();
 });
 
 document.querySelector(".next_btn").addEventListener("click",function(event){
+    stopAutoSlide();
     currentindex = currentindex + 1 % image.length;
     updateImage();
+    startAutoSlide();
 });
 
-const autoSlide = setInterval(() => {
-    currentindex = (currentindex + 1) % image.length; 
-    updateImage(); 
-}, 3000);
+curimage.addEventListener("mouseenter",stopAutoSlide);
+curimage.addEventListener("mouseleave",startAutoSlide)
 
 document.querySelector(".bike_img1").addEventListener("mouseenter",function(event){
     document.querySelector(".bike_img1").src = "https://images.ctfassets.net/rjyti9b6lmvy/4YRjiKBil7AsqKcKkrzlyA/49eec56fcd4c4d1a7b659a63f02ef8c4/1panigale-v2.png";
