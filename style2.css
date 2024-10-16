@@ -19,10 +19,11 @@ html{
     z-index: 10000;
 }
 .navigation a{
+    font-family: "Montserrat", sans-serif;
     text-decoration: none;
     color: black;
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 1000;
     padding: 10px;
     transition: 500ms;
 }
@@ -94,6 +95,7 @@ html{
     transform-origin: center;
 }
 .info{
+    font-family: "Poppins", sans-serif;
     position: absolute;
     padding: 0;
     top: 80%;
@@ -138,7 +140,9 @@ html{
 }
 
 #Rating h1{
+    font-family: "Bebas Neue", sans-serif;
     text-align: center;
+    letter-spacing: 2px;
     background-color: red;
     color: white;
     padding: 10px;
@@ -163,6 +167,7 @@ html{
 }
 
 .rating-box{
+    font-family: "Roboto", sans-serif;
     text-align: center;
 }
 
@@ -170,6 +175,19 @@ html{
     border: 2px solid black;
     padding: 10px 100px;
     resize: none;
+}
+
+.bike_img span{
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;
+    text-decoration: underline;
+    font-size: 2rem;
+    text-underline-offset: 8px;
+}
+
+.bike_img img:hover+span{
+    text-decoration-color: red;
+    text-decoration-thickness:4px ;
 }
 
 @media (max-width:780px){

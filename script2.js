@@ -56,12 +56,18 @@ document.querySelector(".bike_img4").addEventListener("mouseleave",function(even
 });
 
 const stars = document.querySelectorAll(".stars i");
+let currentRating = -1;  
 
 stars.forEach((star, index1) => {
     star.addEventListener("click", () => {
-        stars.forEach((star, index2) => {
-            index1 >= index2 ? star.classList.add("active") : star.classList.remove("active");
-        });
+        if (currentRating === index1) {
+            stars.forEach((star) => star.classList.remove("active"));
+            currentRating = -1; 
+        } else {
+            stars.forEach((star, index2) => {
+                index1 >= index2 ? star.classList.add("active") : star.classList.remove("active");
+            });
+            currentRating = index1; 
+        }
     });
 });
-
