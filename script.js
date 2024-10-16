@@ -11,6 +11,19 @@ document.querySelector(".img_show").addEventListener("click" ,function(event){
     }
 });
 
+document.querySelector(".img_show1").addEventListener("click" ,function(event){
+    const password = document.querySelector("#confirmpassword");
+    const toggle = document.querySelector(".img_show1");
+
+    if (password.getAttribute('type') === 'password'){
+        password.setAttribute("type","text");
+        toggle.src = './asset/eye-open.png';
+    }else{
+        password.setAttribute("type","password");
+        toggle.src = './asset/eye-close.png';
+    }
+});
+
 
 document.querySelector("#email").addEventListener('input',function(event){
     const email = document.getElementById("email").value;

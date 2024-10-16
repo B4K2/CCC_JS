@@ -1,3 +1,9 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -33,14 +39,17 @@ html{
 .bikephoto{
     position: relative;
     top: 150px;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
-}
-
-.bikephoto .bikeimage{
     width: 100%;
 }
+
+.bikephoto .bikeimage {
+    width: 100%;
+    height: auto;
+}
+
 
 .next{
     position: absolute;
@@ -84,16 +93,13 @@ html{
     transform: scale(1.5) rotate(45deg); 
     transform-origin: center;
 }
-
- 
 .info{
     position: absolute;
-    bottom: 100px;
     padding: 0;
+    top: 80%;
     color: white;
     font-size: 4rem;
     font-weight: 800;
-    right: 80%;
 }
 
 #bikes{
@@ -116,7 +122,8 @@ html{
 
 .bike_img{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -163,4 +170,23 @@ html{
     border: 2px solid black;
     padding: 10px 100px;
     resize: none;
+}
+
+@media (max-width:780px){
+    .navigation{
+        height: max-content;
+    }
+    .navigation a{
+        font-size: 1.5rem;
+    }
+    .navigation img{
+        margin: 0;
+        height: 60px;
+    }
+    .bikephoto{
+        top: 100px;
+    }
+    .info{
+        font-size: 2rem;
+    }
 }

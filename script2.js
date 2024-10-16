@@ -1,6 +1,6 @@
 const image = [
     {src : 'https://images.ctfassets.net/x7j9qwvpvr5s/43adRuY33iuCayAyMy3wTw/5545b174f876fc95ffcfff3d643c4d23/Ducati-MY25-Panigale-V4-overview-carousel-hero-link-1600x650-01.jpg' , text : 'Panigale V4' },
-    {src : 'https://www.mariomanzomoto.it/wp-content/uploads/2024/10/Ducati-MY25-Multistrada-V4-overview-carousel-hero-link-1600x650-06.jpg', text : 'Multistrade V4'}
+    {src : 'https://www.mariomanzomoto.it/wp-content/uploads/2024/10/Ducati-MY25-Multistrada-V4-overview-carousel-hero-link-1600x650-06.jpg', text : 'Multistrade V4'},
 ];
 
 let currentindex = 0;
