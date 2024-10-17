@@ -27,14 +27,14 @@ function stopAutoSlide() {
 
 document.querySelector(".prev_btn").addEventListener("click",function(event){
     stopAutoSlide();
-    currentindex = currentindex - 1 % image.length;
+    currentindex = (currentindex - 1) % image.length;
     updateImage();
     startAutoSlide();
 });
 
 document.querySelector(".next_btn").addEventListener("click",function(event){
     stopAutoSlide();
-    currentindex = currentindex + 1 % image.length;
+    currentindex = (currentindex + 1) % image.length;
     updateImage();
     startAutoSlide();
 });
