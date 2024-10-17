@@ -1,6 +1,7 @@
 const image = [
     {src : 'https://images.ctfassets.net/x7j9qwvpvr5s/43adRuY33iuCayAyMy3wTw/5545b174f876fc95ffcfff3d643c4d23/Ducati-MY25-Panigale-V4-overview-carousel-hero-link-1600x650-01.jpg' , text : 'Panigale V4' },
     {src : 'https://www.mariomanzomoto.it/wp-content/uploads/2024/10/Ducati-MY25-Multistrada-V4-overview-carousel-hero-link-1600x650-06.jpg', text : 'Multistrade V4'},
+    {src : 'https://i.postimg.cc/1Rq5p25N/3371-1.jpg' , text : 'Panigale V4S'}
 ];
 
 let currentindex = 0;
@@ -66,6 +67,12 @@ document.querySelector(".bike_img4").addEventListener("mouseenter",function(even
 });
 document.querySelector(".bike_img4").addEventListener("mouseleave",function(event){
     document.querySelector(".bike_img4").src = "https://images.ctfassets.net/x7j9qwvpvr5s/Og3RwLG7uLAN6lDHo5OxQ/6d14798e070edbdb21deac1dbccecb6c/MY23-Multistrada-V4-Rally-Radar-Gr-Model-Blocks-630x390.png";
+});
+document.querySelector(".bike_img5").addEventListener("mouseenter",function(event){
+    document.querySelector(".bike_img5").src = "https://images.ctfassets.net/rjyti9b6lmvy/74ICrNPrgjt6vmtYahWylZ/4d70ae499ca364b1e5990d11d96c7a90/1SCR-icon.png";
+});
+document.querySelector(".bike_img5").addEventListener("mouseleave",function(event){
+    document.querySelector(".bike_img5").src = "https://images.ctfassets.net/rjyti9b6lmvy/6lu3XTIM1xnXLeKTbYc8HU/e2e1a0da1ef344ebc62f3fd5fabf5c21/2SCR-icon.png";
 });
 
 const stars = document.querySelectorAll(".stars i");

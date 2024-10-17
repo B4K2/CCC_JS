@@ -112,7 +112,7 @@ html{
 
 #bikes h1{
     padding: 10px;
-    background-color: red;
+    background-color: #cc1517;
     color: white;
     width: max-content;
     margin-left: 50%;
@@ -143,7 +143,7 @@ html{
     font-family: "Bebas Neue", sans-serif;
     text-align: center;
     letter-spacing: 2px;
-    background-color: red;
+    background-color: #cc1517;
     color: white;
     padding: 10px;
 }
